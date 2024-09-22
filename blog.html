@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- DaisyUi CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="sticky top-0 z-10">
+        <nav class="flex justify-around py-5 bg-pink-50 ">
+            <div>
+                <a href="./index.html">
+                    <button class="btn bg-[#B4F461] px-7 font-bold">Home</button>
+                </a>
+            </div>
+            <div class="flex items-center gap-3">
+                <img src="./assets/logo.png" alt="">
+                <h2 class="font-bold">Donate Bangladesh</h2>
+            </div>
+            <div class="flex  items-center gap-1">
+                <img src="./assets/coin.png" alt="">
+               <p class="text-gray-600 font-semibold">5500</p>
+               <p class="text-gray-600 font-semibold">BDT</p>
+            </div>
+        </nav>
+</header>
+
+<main>
+    <div class="mt-10 container mx-auto flex flex-col gap-7 mb-20 ">
+        <div class="flex gap-3">
+            <h1 class="font-bold text-5xl text-black">Important FAQ</h1>
+            <img src="./assets/FAQ.png" alt="">
+        </div>
+        <!-- accordion -->
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (Dom)?</div>
+            <div class="collapse-content">
+              <p class="text-gray-600 font-semibold">With the HTML DOM, JavaScript can access and change all the elements of an HTML document.</p>
+            </div>
+          </div>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the dom?</div>
+            <div class="collapse-content">
+              <p class="text-gray-600 font-semibold">To select an element from the DOM in JavaScript, we can use several methods depending on the kind of selection you need. Here are the most commonly used methods</p>
+              <p class="text-gray-600 font-semibold">1.Using getElementById: The getElementById method allows you to select an element by its ID <br>
+               2. Using getElementsByClassName <br>
+               3. Using getElementsByTagName <br>
+               4. Using querySelector <br>
+               5. Using querySelectorAll <br>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+            <div class="collapse-content">
+              <p class="text-gray-600 font-semibold">Event delegation is based event-bubbling method. It is an event-handling pattern that allows you to handle events at a higher level in the DOM tree other than the level where the event was first received.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+              <p class="text-gray-600 font-semibold">If you want to change other attributes like id , href , or src , you can use the setAttribute() method. The setAttribute() method accepts two arguments: The name of the attribute to set. The value of the attribute to set.</p>
+            </div>
+          </div>
+          
+    </div>
+</main>
+</body>
+</html>
