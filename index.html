@@ -32,12 +32,13 @@
                 </div>
             </nav>
             <div class="flex gap-2 justify-center pt-8 mb-8 pb-2" style="backdrop-filter: blur(2px);">
-                <button class="btn bg-[#B4F461] px-6 font-bold text-black">Donation</button>
-                <button class="btn border-2 border-gray-200 px-6 font-bold bg-white text-gray-600">History</button>
+                <button id="donation-button" class="btn bg-lime-300 px-6 font-bold">Donation</button>
+
+                <button id="history-button" class="btn border-2 border-gray-200 px-6 font-bold bg-white text-gray-600">History</button>
             </div>
     </header>
 
-    <main class="flex flex-col gap-4 mb-32 w-9/12 mx-auto">
+    <main id="main" class="flex flex-col gap-4 mb-32 w-9/12 mx-auto">
         <!-- Noakhali Flood -->
         <div class="hero border-2 rounded-xl border-gray-200 container mx-auto">
             <div class="hero-content flex-col lg:flex-row">
@@ -106,15 +107,6 @@
               </div>
             </div>
           </div>
-
-          <!-- History section -->
-           <section class="hidden">
-            <div class="max-w-screen-lg mx-auto border border-red-600 rounded-lg p-4">
-                <h1 class="font-bold text-black mb-3">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h1>
-                <p class="font-semibold text-sm text-gray-500">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
-            </div>
-           </section>
-
            <!-- modal -->
             
 
@@ -135,7 +127,16 @@
         </div>
 </dialog>
     </main>
+
+       <!-- History section -->
+    <section id="history" class="hidden">
+        <div class="max-w-screen-lg mx-auto border border-red-600 rounded-lg p-4">
+            <h1 class="font-bold text-black mb-3">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h1>
+            <p class="font-semibold text-sm text-gray-500">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
+        </div>
+    </section>
     <script src="./js/utilities.js"></script>
     <script src="./js/donate.js"></script>
+    <script src="./js/toogle.js"></script>
 </body>
 </html>
