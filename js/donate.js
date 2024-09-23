@@ -75,7 +75,6 @@ document.getElementById("quota-button").addEventListener('click',function(){
         return;
     }
     const availableBalance = balance-donationTaka;
-    
     const totalTaka = donationTaka + addTaka;
     
     document.getElementById("quota-taka").innerText = totalTaka;
