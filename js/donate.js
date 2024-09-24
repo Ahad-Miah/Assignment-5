@@ -7,8 +7,12 @@ document.getElementById('noakhali-button').addEventListener('click',function(){
 
     const balance = innerTextValue("balance");
 
-    if(donationTaka < 0 || isNaN(donationTaka) || donationTaka > balance){
+    if(donationTaka <= 0 || isNaN(donationTaka)){
         alert("Invalid input");
+        return;
+    }
+    if(donationTaka > balance){
+        alert("Insufficient Balance");
         return;
     }
     const availableBalance = balance-donationTaka;
@@ -39,8 +43,12 @@ document.getElementById("feni-button").addEventListener('click',function(){
 
     const balance = innerTextValue("balance");
 
-    if(donationTaka < 0 || isNaN(donationTaka) || donationTaka > balance){
+    if(donationTaka <= 0 || isNaN(donationTaka)){
         alert("Invalid input");
+        return;
+    }
+    if(donationTaka > balance){
+        alert("Insufficient Balance");
         return;
     }
     const availableBalance = balance-donationTaka;
@@ -70,8 +78,12 @@ document.getElementById("quota-button").addEventListener('click',function(){
 
     const balance = innerTextValue("balance");
     
-    if(donationTaka < 0 || isNaN(donationTaka) || donationTaka > balance){
+    if(donationTaka <= 0 || isNaN(donationTaka)){
         alert("Invalid input");
+        return;
+    }
+    if(donationTaka > balance){
+        alert("Insufficient Balance");
         return;
     }
     const availableBalance = balance-donationTaka;
