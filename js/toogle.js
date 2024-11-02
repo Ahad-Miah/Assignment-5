@@ -27,6 +27,9 @@ document.getElementById('donation-button').addEventListener('click',function(){
     const donationButton = document.getElementById("donation-button");
     donationButton.classList.add("bg-lime-300","text-stone-950");
 
-    const history =  document.getElementById("main");
-    history.classList.remove("hidden");
+    const main =  document.getElementById("main");
+    main.classList.remove("hidden");
+
+    const history = document.getElementById('history');
+    history.classList.add("hidden");
 })
